@@ -9,8 +9,8 @@
     <EditText
         android:id="@+id/editTextFirstName"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Etunimi"
         android:inputType="textPersonName"
@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/editTextLastName"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Sukunimi"
@@ -33,7 +33,7 @@
     <EditText
         android:id="@+id/editTextEmailAddress"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Sähköpostiosoite"
@@ -42,11 +42,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Kandidaatin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPicture" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Diplomi-insinöörin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Tekniikan tohtorin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Uimamaisteri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
     <RadioGroup
         android:id="@+id/radioGroupDegreeProgram"
         android:layout_width="402dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress">
@@ -54,7 +90,7 @@
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:checked="false"
@@ -66,7 +102,7 @@
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:checked="false"
@@ -78,7 +114,7 @@
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:checked="false"
@@ -90,7 +126,7 @@
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:checked="false"
@@ -105,13 +141,13 @@
         android:id="@+id/buttonAddUser"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:onClick="addUser"
         android:text="Lisää käyttäjä"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupPicture" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -145,14 +181,14 @@
         <RadioButton
             android:id="@+id/radioButtonPicture1"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:text="Vasen kuva" />
 
         <RadioButton
             android:id="@+id/radioButtonPicture2"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:text="Oikea kuva" />
 
