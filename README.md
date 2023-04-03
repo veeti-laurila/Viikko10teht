@@ -1,6 +1,6 @@
-# Viikko9
+# Viikko10
 
-Tein tehtävän kokonaan.
+Tein kaikki muut kohdat paitsi aakkosjärjetyksen.
 
 Linkki videoon:
-https://lut-my.sharepoint.com/:v:/g/personal/veeti_laurila_student_lut_fi/EZ3TekaYf1xHmOvm29KTy_EBXNPK0vci5D1sVq69dU2XDA?e=Ce9nho
+https://lut-my.sharepoint.com/:v:/g/personal/veeti_laurila_student_lut_fi/ER1bMkSr8uRKoh9S4tu-qaoBNf09Dz7UY7D9okW0IZCnaw?e=aKmkBS
